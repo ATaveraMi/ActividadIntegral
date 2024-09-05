@@ -20,6 +20,9 @@ class FirstProblem:
     
     def calculate_prefix_length(self, pattern: str) -> List[int]:
         """THis function returns the lps of a string
+        
+        Time Complexity: O(n) -> iterates through the pattern once with the for loop.
+        Space Complexity: O(n) -> The space used is proportional to the length of the pattern for storing the LPS array.
 
         Args:
             pattern (str): a string -> the pattern to be studied
@@ -46,6 +49,26 @@ class FirstProblem:
         return  prefix_length_list
     
     def find_pattern_in_transmission(self, transmission:str, mcode:str)->bool:
+        """
+    This function takes two files and checks if the content of the mcode file is present within the transmission file
+    using the KMP (Knuth-Morris-Pratt) pattern matching algorithm.
+
+    Time Complexity: O(n + m)
+        where m is the length of mcode and n is the length of transmission.
+        The time complexity is linear with respect to the length of both the transmission and mcode files. This includes
+        the time to compute the LPS (Longest Prefix Suffix) array and to perform the pattern matching.
+
+    Space Complexity: O(m)
+        where m is the length of mcode.
+        The primary additional space used is for the LPS array, which has a size proportional to the length of the mcode.
+
+    Args:
+        transmission (str): The path to the file containing the text to search through.
+        mcode (str): The path to the file containing the pattern to search for in the transmission.
+
+    Returns:
+        bool: True if the pattern (mcode) is found within the transmission; False otherwise.
+        """
         transmission: str = self.read_file(transmission)
         mcode: str = self.read_file(mcode)
         lps: List[int] = self.calculate_prefix_length(mcode)
