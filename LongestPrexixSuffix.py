@@ -1,6 +1,6 @@
 from typing import List
 
-class FirstProblem:
+class LPS:
 
     def read_file(self, filename: str) -> str:
         """
@@ -94,12 +94,4 @@ class FirstProblem:
         return False
             
         
-                
-print(FirstProblem().find_pattern_in_transmission("transmission1.txt", "mcode1.txt"))
-                
-            
-# transmission1 = FirstProblem().read_file('transmission1.txt')
-# transmission2 = FirstProblem().read_file('transmission2.txt')
-# mcode1 = FirstProblem().read_file('mcode1.txt')
-# mcode2 = FirstProblem().read_file('mcode2.txt')
-# mcode3 = FirstProblem().read_file('mcode3.txt')
+  

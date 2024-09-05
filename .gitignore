@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.db
+*.sqlite
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# MacOS
+.DS_Store
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Build and Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary Files
+*.tmp
+*.bak
+*.swp
