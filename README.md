@@ -2,7 +2,7 @@
 
 ## Overview
 
-** ActividadIntegral** is a project that includes a pattern matching algorithm implemented using the Knuth-Morris-Pratt (KMP) algorithm. The main functionalities of the project are encapsulated in the `LPS` class, which provides methods for reading files, calculating the Longest Prefix Suffix (LPS) array, and finding patterns within transmission data.
+**ActividadIntegral** is a project that includes a pattern matching algorithm implemented using the Knuth-Morris-Pratt (KMP) algorithm. The main functionalities of the project are encapsulated in the `LPS` class, which provides methods for reading files, calculating the Longest Prefix Suffix (LPS) array, and finding patterns within transmission data.
 
 ## Features
 
