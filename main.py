@@ -72,7 +72,7 @@ class FirstProblem:
             
         
                 
-print(FirstProblem().find_pattern_in_transmission("ActividadIntegral/transmission1.txt", "ActividadIntegral/mcode1.txt"))
+print(FirstProblem().find_pattern_in_transmission("transmission1.txt", "mcode1.txt"))
                 
             
 # transmission1 = FirstProblem().read_file('transmission1.txt')
