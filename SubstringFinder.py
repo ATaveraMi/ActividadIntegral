@@ -21,9 +21,10 @@ class SubstringFinder:
         Space Complexity:
             O(n), where n is the length of s2.
         """
-        # Initialize the 1D table
-        m = len(self.s1)
-        n = len(self.s2)
+        
+        m:int = len(self.s1)
+        n: int = len(self.s2)
+        #Create 1D table
         dp: List[int]= [0] * (n + 1)
         
         max_length = 0  # Length of the longest common substring
