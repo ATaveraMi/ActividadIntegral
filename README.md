@@ -1,8 +1,8 @@
-# ActividadIntegral
+# String Matching Algorithms
 
 ## Overview
 
-**ActividadIntegral** is a project that includes several string matching and substring finding algorithms, implemented to enhance pattern matching capabilities. The main functionalities of the project are encapsulated in various classes, each focusing on a specific algorithm such as the Knuth-Morris-Pratt (KMP) algorithm, the Manacher's algorithm, and the Longest Common Substring using Dynamic Programming.
+**String Matching Algorithms** is a project that includes several string matching and substring finding algorithms, implemented to enhance pattern matching capabilities. The main functionalities of the project are encapsulated in various classes, each focusing on a specific algorithm such as the Knuth-Morris-Pratt (KMP) algorithm, the Manacher's algorithm, and the Longest Common Substring using Dynamic Programming.
 
 ## Features
 
