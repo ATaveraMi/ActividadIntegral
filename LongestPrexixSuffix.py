@@ -1,22 +1,7 @@
 from typing import List
-
+from readFile import read_file
 class LPS:
 
-    def read_file(self, filename: str) -> str:
-        """
-        This function reads a file and if there is one
-
-        Returns:
-            str: file content
-        """
-        try:
-            with open(filename, 'r') as file:
-                content: str = file.read().replace('\n', '')  
-                return content
-            
-        except FileNotFoundError:
-            print(f"Error: file '{filename}' not found")
-            return ""
     
     def calculate_prefix_length(self, pattern: str) -> List[int]:
         """THis function returns the lps of a string
@@ -69,8 +54,8 @@ class LPS:
     Returns:
         bool: True if the pattern (mcode) is found within the transmission; False otherwise.
         """
-        transmission: str = self.read_file(transmission)
-        mcode: str = self.read_file(mcode)
+        transmission: str = read_file(transmission)
+        mcode: str = read_file(mcode)
         lps: List[int] = self.calculate_prefix_length(mcode)
         
         ptr_t: int = 0 #transmission ptr
