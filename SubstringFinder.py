@@ -49,17 +49,4 @@ class SubstringFinder:
 
 
 
-# Paths to the files
-s1 = "files/transmission1.txt"
-s2 = "files/transmission2.txt"
-
-
-
-finder = SubstringFinder(s1, s2)
-
-# Find the longest common substring
-result_string:str=finder.longest_common_substring()
-
-print(result_string)
-
 

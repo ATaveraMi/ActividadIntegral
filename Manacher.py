@@ -3,13 +3,24 @@ from typing import List
 
 class Manacher:
     def manacher(self, transmission: str)->str:
-        """_summary_
+        """Finds the longest palindromic substring within the given transmission file using Manacher's algorithm.
+
+        Manacher's algorithm is an efficient method to find the longest palindromic substring in linear time.
+        The function reads the content of the transmission file and processes it to identify the longest palindrome.
+
+        Time Complexity:
+            O(n), where n is the length of the content in the transmission file.
+            The algorithm runs in linear time due to the way it expands around potential palindrome centers.
+
+        Space Complexity:
+             O(n), where n is the length of the transmission.
+             Additional space is used for the 'palindrome' list, which stores the radius of the palindrome around each character.
 
         Args:
-            transmission (str): _description_
+            transmission (str): The path to the text file containing the transmission data.
 
         Returns:
-            _type_: _description_
+            str: A string representing the starting and ending indices (1-based indexing) of the longest palindromic substring in the transmission.
         """
         self.transmission: str = read_file(transmission)
         
@@ -47,9 +58,3 @@ class Manacher:
         
         
         return f"{start} {end}"
-# Assuming the transmission file is named 'transmission.txt'
-manacher_solver = Manacher()
-index = manacher_solver.manacher('files/transmission2.txt')
-
-# Output will display the indices and you can use them to extract the substring if needed
-print(f"{index}")
