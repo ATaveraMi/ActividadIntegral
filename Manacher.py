@@ -49,7 +49,7 @@ class Manacher:
         return f"{start} {end}"
 # Assuming the transmission file is named 'transmission.txt'
 manacher_solver = Manacher()
-index = manacher_solver.manacher('transmission1.txt')
+index = manacher_solver.manacher('files/transmission2.txt')
 
 # Output will display the indices and you can use them to extract the substring if needed
 print(f"{index}")

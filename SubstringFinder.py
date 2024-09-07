@@ -1,7 +1,7 @@
 from readFile import read_file
 
 class SubstringFinder:
-    def __init__(self, s1: str, s2: str):
+    def __init__(self, s1: str = "transmission1.txt", s2: str = "transmission2.txt"):
         """
         Initializes the SubstringFinder with two strings.
 
@@ -9,6 +9,7 @@ class SubstringFinder:
             s1 (str): The first input file path.
             s2 (str): The second input file path.
         """
+        
         self.s1 = read_file(s1)
         self.s2 = read_file(s2)
 
