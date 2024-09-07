@@ -1,6 +1,6 @@
 def read_file(filename: str) -> str:
         """
-        This function reads a file and if there is one
+        This function reads a file and returns it as a string if there is one
 
         Returns:
             str: file content

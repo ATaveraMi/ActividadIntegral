@@ -1,19 +1,13 @@
 from readFile import read_file
+from typing import List
 
 class SubstringFinder:
-    def __init__(self, s1: str = "transmission1.txt", s2: str = "transmission2.txt"):
-        """
-        Initializes the SubstringFinder with two strings.
-
-        Args:
-            s1 (str): The first input file path.
-            s2 (str): The second input file path.
-        """
+    def __init__(self, s1: str = "files/transmission1.txt", s2: str = "files/transmission2.txt"):
         
-        self.s1 = read_file(s1)
-        self.s2 = read_file(s2)
+        self.s1:str = read_file(s1)
+        self.s2:str = read_file(s2)
 
-    def longest_common_substring(self) -> tuple:
+    def longest_common_substring(self) -> str:
         """
         Finds the longest common substring between the initialized strings using dynamic programming.
 
@@ -29,7 +23,7 @@ class SubstringFinder:
             This is due to the space required to store the DP table.
         """
         # Initialize the DP table
-        dp = [[0] * (len(self.s2) + 1) for _ in range(len(self.s1) + 1)]
+        dp: List[int]= [[0] * (len(self.s2) + 1) for _ in range(len(self.s1) + 1)]
         
         max_length = 0  # Length of the longest common substring
         end_index_s1 = 0  # Ending index of the longest common substring in s1
@@ -43,7 +37,7 @@ class SubstringFinder:
                     if dp[i][j] > max_length:
                         max_length = dp[i][j]
                         end_index_s1 = i
-                        end_index_s2 = j
+                        
                 else:
                     dp[i][j] = 0
 
@@ -56,8 +50,8 @@ class SubstringFinder:
 
 
 # Paths to the files
-s1 = "transmission1.txt"
-s2 = "transmission2.txt"
+s1 = "files/transmission1.txt"
+s2 = "files/transmission2.txt"
 
 
 
